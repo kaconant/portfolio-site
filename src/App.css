@@ -41,32 +41,16 @@ p {
   margin: 15px 20px;
 }
 
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.column {
-  flex: 95%;
-  margin: 5%;
-}
-
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
   .column {
     flex: 1;
   }
-} */
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+}  */
 
 .projImg {
   margin: 5%;
-  width: 50%;
-  height: 50%;
+  width: 90%;
+  height: 90%;
   opacity: .65;
 }
 
