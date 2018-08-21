@@ -8,7 +8,7 @@ class Header extends Component {
       <div className='headerContainer'>
         <div className='rowHeader'>
           <div className='header'>
-            <h1 className='titleName'>Krissy Conant</h1>
+            <a href='/'><h1 className='titleName'>Krissy Conant</h1></a>
           </div>
           <div className='aboutSection'>
             <p className='about'>FULL STACK WEB DEVELOPER</p>
