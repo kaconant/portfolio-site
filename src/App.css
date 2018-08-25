@@ -59,6 +59,7 @@ body {
 
 .headerContainer {
   background-color: rgba(64, 149, 149, 0.4);
+  border: 1px solid rgba(64, 149, 149, 0.3);
 }
 
 .titleName {
@@ -77,12 +78,12 @@ body {
 
 .aboutSection {
   font-family: 'Nunito', sans-serif;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 a:hover{
   text-decoration: none;
-  color: rgb(88, 88, 88); 
+  color: rgb(85, 84, 84);  
 }
 
 .about, .link {
@@ -115,14 +116,33 @@ p, .link {
 /* Project Starts  */
 
 .projImg {
-  margin: 5%;
-  width: 90%;
-  height: 90%;
-  opacity: .65;
+  margin: 12px;
+  width: 450px;
+  height: 300px;
+  opacity: .75;
 }
 
 .proj img:hover {
-  opacity: .9;
+  opacity: .95;
+}
+
+.proj {
+  margin: 20px;
+}
+
+.projBtn {
+  padding: 10px;
+  margin: 60px 0 50px 105px;
+  background-color:rgba(139, 139, 139, 0.8);
+  color: rgba(245, 245, 245, 0.75);
+  border: 1px solid rgba(167, 164, 164, 0.8);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
 }
 
 /* About Section Starts */
@@ -131,20 +151,20 @@ p, .link {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
   width: 375px;
-  margin: 20px;
-  border: 1px solid rgba(245, 245, 245, 0.60);
+  margin: 10px;
+  /* border: 1px solid rgba(245, 245, 245, 0.70); */
   border-radius: 5px;
-  background-color: rgb(245, 245, 245, .60);
-  color: rgb(88, 88, 88); 
+  /* background-color: rgba(64, 149, 149, 0.3); */
+  /* color: rgb(88, 88, 88);  */
   margin: 5px auto;
 }
 
@@ -153,13 +173,14 @@ p, .link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 375px;
-  padding: 5px;
-  border: 1px solid rgba(245, 245, 245, 0.60);
+  width: 320px;
+  padding: 10px;
+  border: 1px solid rgba(64, 149, 149, 0.3);
   border-radius: 5px;
-  background-color: rgb(245, 245, 245, .70);
+  background-color: rgba(243, 243, 243, 0.75);
   font-family: 'Righteous', cursive;
-  color: rgb(88, 88, 88); 
+  font-size: 14px;
+  color: rgb(85, 84, 84); 
 }
 
 .profileBio {
@@ -167,15 +188,63 @@ p, .link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 375px;
-  padding: 5px;
-  border: 1px solid rgba(245, 245, 245, 0.60);
+  width: 320px;
+  padding: 20px;
+  border: 1px solid rgba(64, 149, 149, 0.3);
   border-radius: 5px;
-  background-color: rgb(245, 245, 245, .70);
+  background-color:  rgba(243, 243, 243, 0.75);
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
-  font-size: 15px;
-  color: rgb(88, 88, 88); 
+  font-size: 13px;
+  letter-spacing: 3px;
+  color: rgb(85, 84, 84); 
 }
 
 /* Resume Section Stars */
+
+.krissyPicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.krissyPic {
+  width: 350px;
+  height: 375px;
+  border-radius: 5px;
+}
+
+.resume {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid rgba(64, 149, 149, 0.3);
+  border-radius: 5px;
+  background-color: rgba(243, 243, 243, 0.75);
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  color: rgb(85, 84, 84); 
+}
+
+.resumeBtn {
+  border-radius: 5px;
+}
+
+.resumeTitle {
+  margin: 5px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  padding: 10px;
+  border: 1px solid rgba(64, 149, 149, 0.3);
+  border-radius: 5px;
+  background-color: rgb(253, 253, 253);
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  color: rgb(85, 84, 84); 
+}

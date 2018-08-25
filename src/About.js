@@ -17,7 +17,7 @@ class About extends Component {
         </div>
         <div className='profile'>
           <p className='profileTitle'>FUTURE</p>
-          <p className='profileBio'>Ah, the wild unknown! Since discovering my love of web development in 2017, I've been dreaming [literally] of ways to best integrate technologies to provide great solutions! There's a reason that one of my favorite video games growing up was Tetris: I love solving riddles and thinking of work-flows in the midst of motion. <br/> <br/> This year, I hope to join a company that provides valuable mentorship to help me become an amazing full stack developer. 
+          <p className='profileBio'>Ah, the wild unknown! Since discovering my love of web development in 2017, I've been dreaming [literally] of ways to integrate technologies to provide great solutions! There's a reason that my favorite video games growing up was Tetris: I love solving riddles and thinking of work-flows in the midst of motion. <br/> <br/> This year, I hope to join a company that provides valuable mentorship to help me become an amazing full stack developer. 
           </p>
         </div>
       </div>
