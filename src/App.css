@@ -1,5 +1,6 @@
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Righteous', cursive;
+  font-family: 'Nunito', sans-serif;
   background-image: url('/img/water.jpg');
   background-repeat: no-repeat;
   background-position: center center;
@@ -7,32 +8,81 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 1281px) {
+  /* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+}
+
 /* Nav Bar Starts */
 
-.headerContainer, .rowHeader, .header, .aboutSection, .navbar {
+.headerContainer, .rowHeader, .header, .aboutSection, .header {
   margin: 0 auto;
+  min-height: 87px;
 }
 
 .headerContainer {
-  background-color: rgb(65, 151, 151, .4)
+  background-color: rgba(64, 149, 149, 0.4);
 }
 
 .titleName {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin: 10px 0 0 0;
-  font-family: 'Permanent Marker';
+  margin: 0 auto;
+  font-family: 'Righteous', cursive;
   font-variant: small-caps;
-  font-size: 90px;
-  background-image: -webkit-linear-gradient(#D7A1A0 20%, #D7A1A0 50%);
+  font-size: 80px;
+  background-image: -webkit-linear-gradient(rgb(212, 117, 116) 30%, rgb(212, 170, 168) 50%, rgb(212, 117, 116) 80%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   min-width: 0;
 }
 
 .aboutSection {
-  padding-bottom: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+a:hover{
+  text-decoration: none;
+  color: rgb(88, 88, 88); 
 }
 
 .about, .link {
@@ -40,7 +90,7 @@ body {
   justify-content: center;
   align-content: center;
   line-height: 20%;
-  margin: 10px 10px;
+  margin: 5px 5px;
   padding: 5px;
   min-width: 0;
 }
@@ -54,6 +104,12 @@ p, .link {
 
 .link {
   flex-wrap: wrap;
+}
+
+.headerLinks {
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
 
 /* Project Starts  */
@@ -70,5 +126,56 @@ p, .link {
 }
 
 /* About Section Starts */
+
+.aboutKrissy {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  margin: 20px;
+  border: 1px solid rgba(245, 245, 245, 0.60);
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245, .60);
+  color: rgb(88, 88, 88); 
+  margin: 5px auto;
+}
+
+.profileTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  padding: 5px;
+  border: 1px solid rgba(245, 245, 245, 0.60);
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245, .70);
+  font-family: 'Righteous', cursive;
+  color: rgb(88, 88, 88); 
+}
+
+.profileBio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  padding: 5px;
+  border: 1px solid rgba(245, 245, 245, 0.60);
+  border-radius: 5px;
+  background-color: rgb(245, 245, 245, .70);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(88, 88, 88); 
+}
 
 /* Resume Section Stars */

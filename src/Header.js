@@ -8,14 +8,16 @@ class Header extends Component {
       <div className='headerContainer'>
         <div className='rowHeader'>
           <div className='header'>
-            <a href='/'><h1 className='titleName'>Krissy Conant</h1></a>
+            <a href='/' className='title'><h1 className='titleName'>Krissy Conant</h1></a>
           </div>
           <div className='aboutSection'>
             <p className='about'>FULL STACK WEB DEVELOPER</p>
             <p className='about'>DIGITAL MARKETER</p>
-            <Link to='/projects' className='link'>projects</Link>
-            <Link to='/about' className='link'>about</Link>
-            <Link to='resume' className='link'>resume</Link>
+            <div className='headerLinks'>
+              <Link to='/projects' className='link'>projects</Link>
+              <Link to='/about' className='link'>about</Link>
+              <Link to='resume' className='link'>resume</Link>
+            </div>
           </div>
         </div>
       </div>

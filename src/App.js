@@ -11,7 +11,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className='navBar'>
+        <div className='header'>
           <Header/>
         </div>
         <Switch>
