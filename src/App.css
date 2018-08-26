@@ -74,21 +74,23 @@ a:hover{
   align-items: center;
   font-size: 18px;
   position: relative;
-  text-shadow: -1px -1px 0 #d88581,
-  1px 1px 0 #d88581;
+  text-shadow: -1px -1px 0 #d88581;
   min-width: 0;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   .titleName {
-    font-size: 60px;
+    font-size: 50px;
     margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .descName {
-    font-size: 17px;
-    padding: 5px;
-    margin: 100px 15px;
+    font-size: 15px;
+    text-align: center;
   }
 }
 
@@ -141,6 +143,17 @@ a:hover{
   max-height: 200px;
   min-height: 30px;
   min-width: 30px;
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .projImg {
+    max-width: 350px;
+    min-width: 300px;
+    max-height: 225px;
+    min-height: 200px;
+  }
 }
 
 /* About Section Starts */

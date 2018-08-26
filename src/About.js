@@ -24,7 +24,7 @@ class About extends Component {
         </div>
         <div className='resume'>
           <button className='resumeBtn'><a href="/img/KrissyConantResume.pdf" download="KrissyConantResume.pdf">Download My Resume ➜</a></button>
-          <h3 className="resumeTitle">Let's connect at: <a href="mailto:hello@krissyconant.com">hello@krissyconant.com</a></h3>
+          <h3 className="resumeTitle">Let's connect at <a href="mailto:hello@krissyconant.com">hello@krissyconant.com</a></h3>
         </div>
       </React.Fragment>
     );
