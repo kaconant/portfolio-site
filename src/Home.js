@@ -7,7 +7,7 @@ class Home extends Component {
     return (
       <div className='homePage'>
         <h1 className='titleName'>Krissy Conant</h1>
-        <Animated animationIn="pulse" animationOut="fadeOut" isVisible={true}>
+        <Animated animationIn="fadeInDown" animationOut="fadeOut" isVisible={true}>
           <h3 className='descName'>Full Stack Web Developer</h3>
           <h3 className='descName'>Digital Marketer</h3>
         </Animated>

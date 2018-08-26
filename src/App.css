@@ -67,7 +67,7 @@ a:hover{
   letter-spacing: 6px;
   color:  #ffffff;  
   font-weight: 700;
-  margin: 90px 50px;
+  margin: 85px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,7 +81,7 @@ a:hover{
 @media (min-width: 320px) and (max-width: 480px) {
   .titleName {
     font-size: 50px;
-    margin: 10px auto;
+    margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,7 +162,7 @@ a:hover{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 10px auto;
+  margin: 15px auto;
 }
 
 .profile {
@@ -170,7 +170,7 @@ a:hover{
   flex-direction: column;
   justify-content: center;
   width: 320px;
-  margin: 10px;
+  margin: 15px;
   border-radius: 5px;
   margin: 0px auto;
   max-height: 430px;
@@ -210,7 +210,7 @@ a:hover{
 }
 
 .resume {
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
