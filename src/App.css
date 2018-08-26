@@ -1,84 +1,32 @@
 body {
   font-family: 'Righteous', cursive;
   font-family: 'Nunito', sans-serif;
-  background-image: url('/img/water.jpg');
+  background-color: rgba(64, 149, 149, 0.4);
+  background-image: url('/img/water.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
 }
 
-@media (min-width: 1281px) {
-  /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-}
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-}
-
 /* Nav Bar Starts */
-
-.headerContainer, .rowHeader, .header, .aboutSection, .header {
-  margin: 0 auto;
-  min-height: 87px;
-}
 
 .headerContainer {
   background-color: rgba(64, 149, 149, 0.4);
   border: 1px solid rgba(64, 149, 149, 0.3);
-}
-
-.titleName {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
   margin: 0 auto;
-  font-family: 'Righteous', cursive;
-  font-variant: small-caps;
-  font-size: 80px;
-  background-image: -webkit-linear-gradient(rgb(212, 117, 116) 30%, rgb(212, 170, 168) 50%, rgb(212, 117, 116) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  min-width: 0;
-}
-
-.aboutSection {
+  min-height: 50px;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
+  color:  #ffffff; 
+}
+
+a {
+  color: rgb(212, 117, 116); 
 }
 
 a:hover{
@@ -86,63 +34,107 @@ a:hover{
   color: rgb(85, 84, 84);  
 }
 
-.about, .link {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  line-height: 20%;
-  margin: 5px 5px;
-  padding: 5px;
-  min-width: 0;
-}
-
-p, .link {
+.link {
   letter-spacing: 6px;
   color:  #ffffff;  
   font-weight: 500;
   margin: 15px 20px;
-}
-
-.link {
   flex-wrap: wrap;
 }
 
-.headerLinks {
+/* Home Section Starts */
+
+.titleName {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  margin: 20px auto;
+  font-family: 'Righteous', cursive;
+  font-variant: small-caps;
+  font-size: 80px;
+  background-image: -webkit-linear-gradient(rgb(212, 117, 116) 30%, rgb(212, 170, 168) 50%, rgb(212, 117, 116) 80%);
+  background-image: -moz-linear-gradient(rgb(212, 117, 116) 30%, rgb(212, 170, 168) 50%, rgb(212, 117, 116) 80%);
+  background-image: -o-linear-gradient(rgb(212, 117, 116) 30%, rgb(212, 170, 168) 50%, rgb(212, 117, 116) 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-width: 0;
 }
 
-/* Project Starts  */
-
-.projImg {
-  margin: 12px;
-  width: 450px;
-  height: 300px;
-  opacity: .75;
+.descName {
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 6px;
+  color:  #ffffff;  
+  font-weight: 700;
+  margin: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  position: relative;
 }
 
-.proj img:hover {
-  opacity: .95;
+@media (min-width: 320px) and (max-width: 480px) {
+  .titleName {
+    font-size: 60px;
+  }
+
+  .descName {
+    font-size: 17px;
+    padding: 5px;
+    margin: 100px 15px;
+  }
+}
+
+/* Project Section Starts  */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .proj {
-  margin: 20px;
+  margin: 10px;
+  opacity: .8;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.projImg {
+  max-width: 500px;
+  min-width: 380px;
+  max-height: 340px;
+  min-height: 250px;
+
+}
+
+.proj:hover {
+  opacity: 1;
 }
 
 .projBtn {
-  padding: 10px;
-  margin: 60px 0 50px 105px;
-  background-color:rgba(139, 139, 139, 0.8);
-  color: rgba(245, 245, 245, 0.75);
-  border: 1px solid rgba(167, 164, 164, 0.8);
-  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 50px auto;
+  background-color:rgba(212, 117, 116);
+  color: rgba(245, 245, 245);
+  border: 2px solid rgb(226, 224, 224);
+  border-radius: 10px;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   text-decoration: none;
   text-align: center;
+  max-width: 150px;
+  max-height: 200px;
+  min-height: 30px;
+  min-width: 30px;
 }
 
 /* About Section Starts */
@@ -151,21 +143,19 @@ p, .link {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 10px 0;
+  margin: 10px auto;
 }
 
 .profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  width: 375px;
+  width: 320px;
   margin: 10px;
-  /* border: 1px solid rgba(245, 245, 245, 0.70); */
   border-radius: 5px;
-  /* background-color: rgba(64, 149, 149, 0.3); */
-  /* color: rgb(88, 88, 88);  */
-  margin: 5px auto;
+  margin: 0px auto;
+  max-height: 430px;
+  min-height: 430px;
 }
 
 .profileTitle {
@@ -200,42 +190,31 @@ p, .link {
   color: rgb(85, 84, 84); 
 }
 
-/* Resume Section Stars */
-
-.krissyPicture {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px auto;
-}
-
-.krissyPic {
-  width: 350px;
-  height: 375px;
-  border-radius: 5px;
-}
-
 .resume {
-  margin: 20px auto;
+  margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  width: 400px;
-  padding: 10px;
+  max-width: 400px;
+  border: 1px solid rgba(64, 149, 149, 0.3);
+  color: rgb(85, 84, 84); 
+  background-color: rgba(243, 243, 243, 0.75);
+  border-radius: 5px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+}
+
+.resumeBtn {
+  margin: 10px auto;
   border: 1px solid rgba(64, 149, 149, 0.3);
   border-radius: 5px;
   background-color: rgba(243, 243, 243, 0.75);
   font-family: 'Nunito', sans-serif;
-  font-size: 20px;
-  color: rgb(85, 84, 84); 
-}
-
-.resumeBtn {
-  border-radius: 5px;
 }
 
 .resumeTitle {
-  margin: 5px auto;
+  margin: 10px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -243,7 +222,7 @@ p, .link {
   padding: 10px;
   border: 1px solid rgba(64, 149, 149, 0.3);
   border-radius: 5px;
-  background-color: rgb(253, 253, 253);
+  background-color: rgba(243, 243, 243, 0.75);
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   color: rgb(85, 84, 84); 

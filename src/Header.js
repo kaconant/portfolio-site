@@ -3,23 +3,13 @@ import { Link } from 'react-router-dom';
 import './App.css';
 
 class Header extends Component {
+
   render() {
     return (
       <div className='headerContainer'>
-        <div className='rowHeader'>
-          <div className='header'>
-            <a href='/' className='title'><h1 className='titleName'>Krissy Conant</h1></a>
-          </div>
-          <div className='aboutSection'>
-            <p className='about'>FULL STACK WEB DEVELOPER</p>
-            <p className='about'>DIGITAL MARKETER</p>
-            <div className='headerLinks'>
-              <Link to='/projects' className='link'>projects</Link>
-              <Link to='/about' className='link'>about</Link>
-              <Link to='resume' className='link'>resume</Link>
-            </div>
-          </div>
-        </div>
+        <Link to='/' className='link'>home</Link>
+        <Link to='/about' className='link'>about</Link>
+        <Link to='/projects' className='link'>projects</Link>
       </div>
     );
   }
