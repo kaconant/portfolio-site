@@ -2,7 +2,7 @@ body {
   font-family: 'Righteous', cursive;
   font-family: 'Nunito', sans-serif;
   background-color: rgba(64, 149, 149, 0.4);
-  background-image: url('/img/water.png');
+  background-image: url('/img/water.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -66,12 +66,12 @@ a:hover{
   letter-spacing: 6px;
   color:  #ffffff;  
   font-weight: 700;
-  margin: 100px 50px;
+  margin: 90px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 20px;
+  font-size: 17px;
   position: relative;
 }
 
