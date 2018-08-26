@@ -7,6 +7,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
+  color: rgb(248, 248, 248);  
 }
 
 /* Nav Bar Starts */
@@ -26,12 +27,12 @@ body {
 }
 
 a {
-  color: rgb(212, 117, 116); 
+  color: #ffffff; 
 }
 
 a:hover{
   text-decoration: none;
-  color: rgb(85, 84, 84);  
+  color: #cccbcb;  
 }
 
 .link {
@@ -53,11 +54,11 @@ a:hover{
   font-family: 'Righteous', cursive;
   font-variant: small-caps;
   font-size: 80px;
-  background-image: -webkit-linear-gradient(rgb(212, 117, 116) 30%, rgb(212, 170, 168) 50%, rgb(212, 117, 116) 80%);
-  background-image: -moz-linear-gradient(rgb(212, 117, 116) 30%, rgb(212, 170, 168) 50%, rgb(212, 117, 116) 80%);
-  background-image: -o-linear-gradient(rgb(212, 117, 116) 30%, rgb(212, 170, 168) 50%, rgb(212, 117, 116) 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #d88581;
+  text-shadow: -1px -1px 0 #fff,
+  1px -1px 0 #409595,
+  -1px 1px 0 #409595,
+  1px 1px 0 #409595;
   min-width: 0;
 }
 
@@ -71,8 +72,11 @@ a:hover{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 17px;
+  font-size: 18px;
   position: relative;
+  text-shadow: -1px -1px 0 #d88581,
+  1px 1px 0 #d88581;
+  min-width: 0;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -111,7 +115,6 @@ a:hover{
   min-width: 380px;
   max-height: 340px;
   min-height: 250px;
-
 }
 
 .proj:hover {
@@ -123,9 +126,10 @@ a:hover{
   justify-content: center;
   flex-wrap: wrap;
   margin: 50px auto;
-  background-color:rgba(212, 117, 116);
+  background-color: rgba(168, 167, 167, 0.75);
   color: rgba(245, 245, 245);
-  border: 2px solid rgb(226, 224, 224);
+  text-shadow: 1px -1px 0  #7e7c7c;
+  border: 2px solid #7e7c7c;
   border-radius: 10px;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;
@@ -211,7 +215,7 @@ a:hover{
   margin: 10px auto;
   border: 1px solid rgba(64, 149, 149, 0.3);
   border-radius: 5px;
-  background-color: rgba(243, 243, 243, 0.75);
+  background-color: rgba(168, 167, 167, 0.75);
   font-family: 'Nunito', sans-serif;
 }
 
@@ -224,7 +228,7 @@ a:hover{
   padding: 10px;
   border: 1px solid rgba(64, 149, 149, 0.3);
   border-radius: 5px;
-  background-color: rgba(243, 243, 243, 0.75);
+  background-color: rgba(168, 167, 167, 0.75);
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   color: rgb(85, 84, 84); 
