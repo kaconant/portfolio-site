@@ -3,7 +3,7 @@ body {
   font-family: 'Nunito', sans-serif;
   background-color: rgba(64, 149, 149, 0.4);
   background-image: url('/img/water.jpg');
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
