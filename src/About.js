@@ -5,6 +5,17 @@ class About extends Component {
   render() {
     return (
       <React.Fragment>
+        <div className='aboutMiddle'>
+          <div className='krissyBack'>
+            <img className='krissyConant' src='/img/krissy.png' alt='krissy'/>
+            <button className='resumeBtn'><a href="/img/KrissyConantResume.pdf" download="KrissyConantResume.pdf">Download My Resume ➜</a></button>
+            <div className='allContact'>
+              <h3 className="resumeTitle">email me:<a href="mailto:krissyconant@gmail.com">hello@krissyconant.com</a></h3>
+              <h3 className="resumeTitle">linkedin:<a href="https://www.linkedin.com/in/krissy-conant/"> krissy-conant</a></h3>
+              <h3 className="resumeTitle">github:<a href="https://github.com/kaconant"> kaconant</a></h3>
+            </div>
+          </div>
+        </div>
         <div className='aboutKrissy'>
           <div className='profile'>
             <p className='profileTitle'>PAST</p>
@@ -21,10 +32,6 @@ class About extends Component {
             <p className='profileBio'>Ah, the wild unknown! Since discovering my love of web development in 2017, I've been dreaming [literally] of ways to integrate technologies to provide great solutions! There's a reason that my favorite video games growing up was Tetris: I love solving riddles and thinking of work-flows in the midst of motion. <br/> <br/> This year, I hope to join a company that provides valuable mentorship to help me become an amazing full stack developer. 
             </p>
           </div>
-        </div>
-        <div className='resume'>
-          <button className='resumeBtn'><a href="/img/KrissyConantResume.pdf" download="KrissyConantResume.pdf">Download My Resume ➜</a></button>
-          <h3 className="resumeTitle">Let's connect at <a href="mailto:hello@krissyconant.com">hello@krissyconant.com</a></h3>
         </div>
       </React.Fragment>
     );
