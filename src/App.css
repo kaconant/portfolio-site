@@ -1,7 +1,7 @@
 body {
   font-family: 'Righteous', cursive;
   font-family: 'Nunito', sans-serif;
-  background-color: rgba(64, 149, 149, 0.6);
+  background-color: rgba(64, 149, 149, 0.5);
   height: 100%;
   color: rgb(248, 248, 248);  
   margin: 0 auto;
@@ -17,7 +17,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  min-height: 50px;
+  min-height: 45px;
+  max-height: 40px;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   color:  #ffffff; 
@@ -58,14 +59,13 @@ a:hover{
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  margin-top: 40px;
   font-family: 'Righteous', cursive;
   font-variant: small-caps;
   /* font-size: 100px; */
   color: #d88581;
   text-shadow: -1px -1px 0 #fff,
   1px -1px 0 #409595,
-  -1px 1px 0 #409595,
+  -1px 1px 0 #fff,
   1px 1px 0 #409595;
   min-width: 0;
 }
@@ -75,15 +75,18 @@ a:hover{
   letter-spacing: 6px;
   color:  #ffffff;  
   font-weight: 700;
-  margin: 100px 50px;
+  margin: 60px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   font-size: 20px;
-  text-shadow: -1px -1px 0 #d88581;
+  text-shadow: -1px -1px 0 #e44b43,
+  -1px 1px 0 #e44b43
+  ;
   min-width: 0;
+  text-align: center;
 }
 
 @media (min-width: 590px) {
@@ -112,13 +115,12 @@ a:hover{
 @media (min-width: 320px) and (max-width: 480px) {
   .titleName {
     font-size: 60px;
-    margin: 80px auto;
+    margin: 50px auto;
   }
 
   .descName {
     font-size: 20px;
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 70px;
   }
 }
 
@@ -129,7 +131,7 @@ a:hover{
   flex-wrap: wrap;
   position: relative;
   margin: 0 auto;
-  min-height: 200px;
+  min-height: 150px;
   background-color: rgba(64, 149, 149, 0.5);
   border: 1px solid rgba(64, 149, 149, 0.3);
 }
@@ -155,6 +157,10 @@ a:hover{
   font-size: 20px;
 }
 
+.skillsTitle {
+  margin: 0 auto;
+}
+
 .skillsBio {
   display: flex;
   flex-direction: column;
@@ -163,10 +169,10 @@ a:hover{
   text-align: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 10px;
-  width: 310px;
-  max-height: 80px;
-  min-height: 80px;
+  padding: 5px;
+  width: 319px;
+  max-height: 117px;
+  min-height: 117px;
   border: 1px solid rgba(64, 149, 149, 0.3);
   border-radius: 5px;
   background-color:  rgba(243, 243, 243, 0.75);
@@ -197,6 +203,7 @@ a:hover{
   background-size: cover;
   padding-top: 5px;
   padding-bottom: 70px;
+  background-color: rgba(64, 149, 149, 0.5);
 }
 
 .row {
@@ -228,11 +235,9 @@ a:hover{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 50px auto;
-  background-color: rgba(64, 149, 149);
+  margin: 80px auto;
+  background-color: rgb(92, 156, 156);
   color: rgba(245, 245, 245);
-  border: 2px solid rgba(64, 149, 149, 0.3);
-  border-radius: 10px;
   cursor: pointer;
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
@@ -265,6 +270,7 @@ a:hover{
   .projBtn {
     min-height: 30px;
     min-width: 30px;
+    margin: 50px auto;
   }
 }
 
@@ -275,26 +281,27 @@ a:hover{
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
-  padding: 10px;
+  padding: 5px;
 }
 
 .krissyBack {
   margin: 0 auto;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  max-width: 420px;
+  max-width: 400px;
   max-height: 520px;
   color: rgb(85, 84, 84); 
   background-color: rgba(243, 243, 243, 0.55);
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
+  border-radius: 10px;
 }
 
 .krissyConant {
-  max-width: 400px;
+  max-width: 300px;
   border-radius: 100px;
 }
 
@@ -355,15 +362,15 @@ a:hover{
   color: rgb(85, 84, 84); 
 }
 
-
 .profile {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
-  min-width: 400px;
-  margin: 15px;
+  min-width: 350px;
+  max-width: 350px;
+  margin: 10px;
   max-height: 430px;
   min-height: 230px;
   border-radius: 5px;
@@ -381,6 +388,7 @@ a:hover{
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
 }
 
 .profileBio {
@@ -392,7 +400,7 @@ a:hover{
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 420px;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid rgba(64, 149, 149, 0.3);
   border-radius: 5px;
   background-color:  rgba(243, 243, 243, 0.75);
