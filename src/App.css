@@ -1,7 +1,7 @@
 body {
   font-family: 'Righteous', cursive;
   font-family: 'Nunito', sans-serif;
-  background-color: rgba(64, 149, 149, 0.5);
+  background-color: rgba(64, 149, 149, 0.75);
   height: 100%;
   color: rgb(248, 248, 248);  
   margin: 0 auto;
@@ -10,8 +10,8 @@ body {
 /* Nav Bar Starts */
 
 .headerContainer {
-  background-color: rgba(64, 149, 149, 0.5);
-  border: 1px solid rgba(64, 149, 149, 0.3);
+  background-color: rgba(64, 149, 149, 0.3);
+  /* border: 1px solid rgba(64, 149, 149, 0.3); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,7 +49,7 @@ a:hover{
   background-attachment: fixed;
   background-size: cover;
   padding-top: 5px;
-  padding-bottom: 180px;
+  padding-bottom: 200px;
 }
 
 .titleName {
@@ -61,13 +61,11 @@ a:hover{
   margin: 0 auto;
   font-family: 'Righteous', cursive;
   font-variant: small-caps;
-  /* font-size: 100px; */
   color: #d88581;
   text-shadow: -1px -1px 0 #fff,
   1px -1px 0 #409595,
   -1px 1px 0 #fff,
   1px 1px 0 #409595;
-  min-width: 0;
 }
 
 .descName {
@@ -75,13 +73,13 @@ a:hover{
   letter-spacing: 6px;
   color:  #ffffff;  
   font-weight: 700;
-  margin: 60px 50px;
+  margin: 55px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  font-size: 20px;
+  font-size: 18px;
   text-shadow: -1px -1px 0 #e44b43,
   -1px 1px 0 #e44b43
   ;
@@ -132,7 +130,7 @@ a:hover{
   position: relative;
   margin: 0 auto;
   min-height: 150px;
-  background-color: rgba(64, 149, 149, 0.5);
+  background-color: rgba(64, 149, 149, 0.3);
   border: 1px solid rgba(64, 149, 149, 0.3);
 }
 
@@ -202,8 +200,10 @@ a:hover{
   background-attachment: fixed;
   background-size: cover;
   padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 70px;
-  background-color: rgba(64, 149, 149, 0.5);
+  margin: 0 auto;
 }
 
 .row {
@@ -221,7 +221,7 @@ a:hover{
   justify-content: center;
   cursor: pointer;
   color: rgba(245, 245, 245);
-  border: 2px solid rgba(64, 149, 149);
+  border: 3px solid rgba(64, 149, 149, 0.5);
 }
 
 .card-img {
@@ -235,8 +235,8 @@ a:hover{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 80px auto;
-  background-color: rgb(92, 156, 156);
+  margin: 90px auto;
+  background-color: #72AFAE;
   color: rgba(245, 245, 245);
   cursor: pointer;
   font-family: 'Nunito', sans-serif;
@@ -244,33 +244,73 @@ a:hover{
   font-size: 20px;
   text-decoration: none;
   text-align: center;
-  max-width: 300px;
+  max-width: 200px;
   max-height: 200px;
 }
 
+.projImg {
+  max-width: 450px;
+  min-width: 400px;
+  max-height: 300px;
+}
+
 .projTitle {
-  background-color: rgba(64, 149, 149);
+  background-color: #72AFAE;
   color: rgba(245, 245, 245);
   font-weight: 600;
   font-size: 18px;
+  margin: 0;
   text-align: center;
-  margin: 0 auto;
-  width: 100%;
+  max-width: 450px;
+  min-width: 380px;
+}
+
+.projDesc {
+  background-color: #72AFAE;
+  color: rgba(245, 245, 245);
+  font-size: 13px;
+  text-align: center;
+  max-width: 450px;
+  min-width: 380px;
+  padding: 5px;
+  margin: 0;
+}
+
+@media (min-width: 480px) and (max-width: 590px) {
+  .projImg {
+    max-width: 400px;
+    max-height: 225px;
+  }
+
+  .projTitle {
+    max-width: 400px;
+  }
+  
+  .projDesc {
+    max-width: 400px;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
   
   .projImg {
-    max-width: 350px;
     min-width: 300px;
     max-height: 225px;
-    min-height: 200px;
   }
+
+  .projTitle {
+    min-width: 300px;
+  }
+  
+  .projDesc {
+    min-width: 300px;
+  } 
 
   .projBtn {
     min-height: 30px;
-    min-width: 30px;
-    margin: 50px auto;
+    min-width: 35px;
+    margin: 100px auto;
   }
 }
 
