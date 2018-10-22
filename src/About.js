@@ -10,7 +10,7 @@ class About extends Component {
             <img className='krissyConant' src='/img/krissy.png' alt='krissy'/>
             <button className='resumeBtn'><a href="/img/KrissyConantResume.pdf" download="KrissyConantResume.pdf">Download My Resume ➜</a></button>
             <div className='allContact'>
-              <h3 className="resumeTitle">email me: <br/><a href="mailto:krissyconant@gmail.com">hello@krissyconant.com</a></h3>
+              <h3 className="resumeTitle clearfix">email me: <br/><a href="mailto:krissyconant@gmail.com">hello@krissyconant.com</a></h3>
               <h3 className="resumeTitle">linkedin: <br/><a href="https://www.linkedin.com/in/krissy-conant/"> krissy-conant</a></h3>
               <h3 className="resumeTitle">github: <br/><a href="https://github.com/kaconant"> kaconant</a></h3>
             </div>

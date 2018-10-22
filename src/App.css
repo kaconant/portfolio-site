@@ -10,7 +10,7 @@ body {
 /* Nav Bar Starts */
 
 .headerContainer {
-  background-color: rgba(64, 149, 149, 0.3);
+  background-color: rgba(64, 149, 149, 0.302);
   /* border: 1px solid rgba(64, 149, 149, 0.3); */
   display: flex;
   flex-wrap: wrap;
@@ -39,6 +39,7 @@ a:hover{
   font-weight: 500;
   margin: 15px 20px;
   flex-wrap: wrap;
+  z-index:1;
 }
 
 /* Home Section Starts */
@@ -49,7 +50,7 @@ a:hover{
   background-attachment: fixed;
   background-size: cover;
   padding-top: 5px;
-  padding-bottom: 200px;
+  min-height: calc(100vh - 300px);
 }
 
 .titleName {
@@ -66,6 +67,7 @@ a:hover{
   1px -1px 0 #409595,
   -1px 1px 0 #fff,
   1px 1px 0 #409595;
+  font-size: 120px;
 }
 
 .descName {
@@ -79,34 +81,63 @@ a:hover{
   justify-content: center;
   align-items: center;
   position: relative;
-  font-size: 18px;
-  text-shadow: -1px -1px 0 #e44b43,
-  -1px 1px 0 #e44b43
+  font-size: 25px;
+  text-shadow: -1px -1px 0 #000,
+  -1px 1px 0 #000,
   ;
   min-width: 0;
   text-align: center;
 }
 
 @media (min-width: 590px) {
+
   .titleName {
-    font-size: 100px;
+    font-size: 90px;
+  }
+
+  .descName {
+    padding: 10px;
+  }
+
+  .skillsTotal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px auto;
+    padding: 150px;
+  }
+  
+  .skillsWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 360px;
+    margin: 20px;
+    max-height: 225px;
+    min-height: 225px;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    background-color: rgba(64, 149, 149, 0.75);
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 590px) {
+  .titleName {
+    font-size: 60px;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-}
+  .skillsTotal {
+    padding: 0px;
+  }
 
-
-@media (min-width: 480px) and (max-width: 590px) {
-  .titleName {
-    font-size: 88px;
-    margin: 20px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .skillsWrap {
+    margin: 0;
   }
 }
 
@@ -120,18 +151,40 @@ a:hover{
     font-size: 20px;
     margin-top: 70px;
   }
+  .skillsTotal {
+    margin: 0;
+    padding: 0;
+  }
+
+  .skillsWrap {
+    margin: 0;
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .skillsPhysical {
+    font-size: 15px;
+  }
+  
+  .skillsBio {
+    font-size: 15px;
+  }
 }
 
 .skillsWrap {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-width: 360px;
+  max-height: 225px;
+  min-height: 225px;
   justify-content: center;
   align-content: center;
-  flex-wrap: wrap;
-  position: relative;
-  margin: 0 auto;
-  min-height: 150px;
-  background-color: rgba(64, 149, 149, 0.3);
-  border: 1px solid rgba(64, 149, 149, 0.3);
+  margin: 10px auto;
+  background-color: rgba(64, 149, 149, 0.75);
+  border-radius: 5px;
 }
 
 .skillsPhysical {
@@ -148,7 +201,6 @@ a:hover{
   min-height: 150px;
   border-radius: 5px;
   border: 1px solid rgba(64, 149, 149, 0.3);
-  border-radius: 5px;
   color: rgb(85, 84, 84); 
   background-color: rgba(243, 243, 243, 0.75);
   font-family: 'Righteous', cursive;
@@ -168,28 +220,16 @@ a:hover{
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 5px;
-  width: 319px;
+  width: 318px;
   max-height: 117px;
   min-height: 117px;
   border: 1px solid rgba(64, 149, 149, 0.3);
-  border-radius: 5px;
   background-color:  rgba(243, 243, 243, 0.75);
   font-family: 'Nunito', sans-serif;
   font-weight: 600;
   font-size: 18px;
   letter-spacing: 3px;
   color: rgb(85, 84, 84); 
-}
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  .skillsPhysical {
-    font-size: 15px;
-  }
-  
-  .skillsBio {
-    font-size: 15px;
-  }
 }
 
 /* Project Section Starts  */
@@ -360,7 +400,7 @@ a:hover{
   flex-wrap: wrap;
   margin: 0px auto;
   padding: 5px;
-  max-height: 100%;
+  min-height: calc(100vh - 450px);
   background-color: rgba(64, 149, 149, 0.5);
   border: 2px solid rgba(64, 149, 149, 0.3);
   border-radius: 5px;
@@ -450,4 +490,3 @@ a:hover{
   letter-spacing: 3px;
   color: rgb(85, 84, 84); 
 }
-
